@@ -139,7 +139,7 @@
 	"character_tails_0x8a":  { "File": "character_tails.bmp", "Rect": "440,392,32,32", "Center": "16,16" },
 	"character_tails_0x8b":  { "File": "character_tails.bmp", "Rect": "492,384,24,48", "Center": "15,23" },
 	"character_tails_0x8c":  { "File": "character_tails.bmp", "Rect": "540,384,24,48", "Center": "15,23" },
-	"character_tails_0x8d":  { "File": "character_tails.bmp", "Rect": "584,392,32,32", "Center": "21,21" },
+	"character_tails_0x8d":  { "File": "character_tails.bmp", "Rect": "584,392,32,32", "Center": "18,18" },
 	"character_tails_0x8e":  { "File": "character_tails.bmp", "Rect": "632,392,32,32", "Center": "16,16" },
 	"character_tails_0x8f":  { "File": "character_tails.bmp", "Rect": "680,392,32,32", "Center": "16,16" },
 	"character_tails_0x90":  { "File": "character_tails.bmp", "Rect": "730,389,32,32", "Center": "12,24" },

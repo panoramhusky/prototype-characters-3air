@@ -141,7 +141,7 @@
 	"character_sonic_0x8c":  { "File": "character_sonic.bmp", "Rect": "624,460,40,32", "Center": "20,14" },
 	"character_sonic_0x8d":  { "File": "character_sonic.bmp", "Rect": "680,460,40,32", "Center": "20,15" },
 	"character_sonic_0x8e":  { "File": "character_sonic.bmp", "Rect": "744,452,24,48", "Center": "12,25" },
-	"character_sonic_0x8f":  { "File": "character_sonic.bmp", "Rect": "792,460,40,32", "Center": "27,20" },
+	"character_sonic_0x8f":  { "File": "character_sonic.bmp", "Rect": "792,460,40,32", "Center": "23,15" },
 	"character_sonic_0x90":  { "File": "character_sonic.bmp", "Rect": "847,452,40,40", "Center": "16,24" },
 	"character_sonic_0x91":  { "File": "character_sonic.bmp", "Rect": "8,512,40,40", "Center": "16,24" },
 	"character_sonic_0x92":  { "File": "character_sonic.bmp", "Rect": "64,512,40,40", "Center": "16,24" },
