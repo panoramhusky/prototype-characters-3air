@@ -1,0 +1,92 @@
+{
+"swing":
+    {
+        "File": "swing.bin",
+        "RomInject": "0x014522"
+    },
+	"swing2":
+    {
+        "File": "swing2.bin",
+        "RomInject": "0x022248"
+    },
+	"sonic anim":
+	{
+		"File": "sonicanim.bin",
+		"RomInject": "0x012aa6"
+	},
+	
+	"Snowboard_Dplc":
+	{
+		"File": "DPLC - Snowboard.bin",
+		"RomInject": "0x348128"
+	},
+	
+	"Snowboard_Map":
+	{
+		"File": "Map - Snowboard.bin",
+		"RomInject": "0x300000"
+	},
+	
+	"Snowboard_Art":
+	{
+		"File": "Snowboard.bin",
+		"RomInject": "0x347850"
+	},
+	
+	"knux anim":
+	{
+		"File": "knuxanim.bin",
+		"RomInject": "0x017ef4"
+	},
+	
+	"tails anim":
+	{
+		"File": "tailsanim.bin",
+		"RomInject": "0x015ab0"
+	},
+"AIZwaterAct1":
+    {
+        "File": "AIZwater.bin",
+        "RomInject": "0xA8C9C"
+    },
+"AIZwaterAct2":
+    {
+        "File": "AIZwater.bin",
+        "RomInject": "0xA8D1C"
+    },
+"HCZwaterAct1":
+    {
+        "File": "HCZwater.bin",
+        "RomInject": "0xA8E5C"
+    },
+"HCZwaterAct2":
+    {
+        "File": "HCZwater.bin",
+        "RomInject": "0xA8EDC"
+    },
+"CNZwater":
+    {
+        "File": "CNZwater.bin",
+        "RomInject": "0xA901C"
+    },
+"ICZwater":
+    {
+        "File": "ICZwater.bin",
+        "RomInject": "0xA921C"
+    },
+"LBZwaterAct1":
+    {
+        "File": "LBZwater.bin",
+        "RomInject": "0x28CA94"
+    },
+"LBZwaterAct2":
+    {
+        "File": "LBZwater2.bin",
+        "RomInject": "0xA93DC"
+    },
+"water knuckles":
+	{
+		"File": "Water Knuckles Patch.bin",
+		"RomInject": "0x7A4A"
+	}
+}

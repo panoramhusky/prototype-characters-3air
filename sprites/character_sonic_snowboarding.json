@@ -1,0 +1,14 @@
+{
+	"character_sonic_snowboarding_0x01":  { "File": "character_sonic_snowboarding.bmp", "Rect": "1,0,48,64", "Center": "25,36" },
+	"character_sonic_snowboarding_0x02":  { "File": "character_sonic_snowboarding.bmp", "Rect": "68,4,32,56", "Center": "16,18" },
+	"character_sonic_snowboarding_0x03":  { "File": "character_sonic_snowboarding.bmp", "Rect": "116,4,50,59", "Center": "23,23" },
+	"character_sonic_snowboarding_0x04":  { "File": "character_sonic_snowboarding.bmp", "Rect": "175,4,46,58", "Center": "22,22" },
+	"character_sonic_snowboarding_0x05":  { "File": "character_sonic_snowboarding.bmp", "Rect": "228,4,46,58", "Center": "23,22" },
+	"character_sonic_snowboarding_0x06":  { "File": "character_sonic_snowboarding.bmp", "Rect": "275,12,60,43", "Center": "33,19" },
+	"character_sonic_snowboarding_0x07":  { "File": "character_sonic_snowboarding.bmp", "Rect": "343,12,60,44", "Center": "32,19" },
+	"character_sonic_snowboarding_0x08":  { "File": "character_sonic_snowboarding.bmp", "Rect": "414,12,59,45", "Center": "29,19" },
+	"character_sonic_snowboarding_0x09":  { "File": "character_sonic_snowboarding.bmp", "Rect": "475,4,50,56", "Center": "29,17" },
+	"character_sonic_snowboarding_0x0a":  { "File": "character_sonic_snowboarding.bmp", "Rect": "525,6,56,56", "Center": "32,19" },
+	"character_sonic_snowboarding_0x0b":  { "File": "character_sonic_snowboarding.bmp", "Rect": "583,8,59,51", "Center": "32,20" },
+	"character_sonic_snowboarding_0x0c":  { "File": "character_sonic_snowboarding.bmp", "Rect": "645,4,56,60", "Center": "30,24" }
+}
