@@ -5,5 +5,24 @@
 		"Author": "panoramhusky, HazelSpooder, Legobouwer9",
 		"Description": "Sonic, Tails and Knuckles' appearances in 1103 with new sprites by EmmaNerd, joshyflip, C.F.A. and yours truly. Special thanks to Legobouwer9 for all of the custom animations, and HazelSpooder for the custom continue screen.",
 		"ModVersion": "2.0"
-	}
+	},
+	
+	"Settings":
+	{
+		"1-Visuals1":
+		[
+			{
+				"InternalName": "protochars.use_protoicons",
+				"DisplayName": "Life Icon Style",
+				"Variable": "protochars.use_protoicons",
+				"Category": "Visuals",
+				"DefaultValue": "0",
+				"Options":
+				{
+						"0x00": "Final",
+						"0x01": "Prototype",						
+				}
+			}
+		],
+	},
 }

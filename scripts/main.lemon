@@ -1,5 +1,12 @@
-global bool sonic.sprites
-globbal bool knux.sprites
+global bool protochars.use_protoicons
+
+function string getCharacterLivesIcon(u8 character)
+{
+	if (protochars.use_protoicons)
+		return (character == CHARACTER_SONIC) ? "hud_lives_icon_proto_sonic" : (character == CHARACTER_TAILS) ? ((global.region_code & 0x80) ? "hud_lives_icon_proto_tails" : "hud_lives_icon_proto_miles") : "hud_lives_icon_proto_knuckles"
+	else
+		return base.getCharacterLivesIcon(character)
+}
 
 //# address-hook(0x0221ec) end(0x022246)
 function void fn0221ec()
