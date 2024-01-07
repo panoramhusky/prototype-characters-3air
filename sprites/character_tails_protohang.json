@@ -1,7 +1,7 @@
 {
-	"character_tails_protohang_1":  { "File": "character_tails_protohang.bmp", "Rect": "4,7,44,42", "Center": "37,14" },
-	"character_tails_protohang_2":  { "File": "character_tails_protohang.bmp", "Rect": "55,7,40,43", "Center": "33,14" },
-	"character_tails_protohang_3":  { "File": "character_tails_protohang.bmp", "Rect": "99,7,41,44", "Center": "28,14" },
-	"character_tails_protohang_4":  { "File": "character_tails_protohang.bmp", "Rect": "153,7,43,43", "Center": "23,14" },
-	"character_tails_protohang_5":  { "File": "character_tails_protohang.bmp", "Rect": "208,7,38,43", "Center": "16,14" }
+	"character_tails_protohang_1":  { "File": "character_tails_protohang.bmp", "Rect": "4,7,44,42", "Center": "37,24" },
+	"character_tails_protohang_2":  { "File": "character_tails_protohang.bmp", "Rect": "55,7,40,43", "Center": "33,24" },
+	"character_tails_protohang_3":  { "File": "character_tails_protohang.bmp", "Rect": "99,7,41,44", "Center": "28,24" },
+	"character_tails_protohang_4":  { "File": "character_tails_protohang.bmp", "Rect": "153,7,43,43", "Center": "23,24" },
+	"character_tails_protohang_5":  { "File": "character_tails_protohang.bmp", "Rect": "208,7,38,43", "Center": "16,24" }
 }

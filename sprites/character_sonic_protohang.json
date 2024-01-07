@@ -1,7 +1,7 @@
 {
-	"character_sonic_protohang_1":  { "File": "character_sonic_protohang.bmp", "Rect": "6,7,40,48", "Center": "32,17" },
-	"character_sonic_protohang_2":  { "File": "character_sonic_protohang.bmp", "Rect": "67,7,32,48", "Center": "24,17" },
-	"character_sonic_protohang_3":  { "File": "character_sonic_protohang.bmp", "Rect": "123,7,24,56", "Center": "16,17" },
-	"character_sonic_protohang_4":  { "File": "character_sonic_protohang.bmp", "Rect": "183,7,24,56", "Center": "8,17" },
-	"character_sonic_protohang_5":  { "File": "character_sonic_protohang.bmp", "Rect": "235,7,40,48", "Center": "8,17" }
+	"character_sonic_protohang_1":  { "File": "character_sonic_protohang.bmp", "Rect": "6,7,40,48", "Center": "32,24" },
+	"character_sonic_protohang_2":  { "File": "character_sonic_protohang.bmp", "Rect": "67,7,32,48", "Center": "24,24" },
+	"character_sonic_protohang_3":  { "File": "character_sonic_protohang.bmp", "Rect": "123,7,24,56", "Center": "16,24" },
+	"character_sonic_protohang_4":  { "File": "character_sonic_protohang.bmp", "Rect": "183,7,24,56", "Center": "8,24" },
+	"character_sonic_protohang_5":  { "File": "character_sonic_protohang.bmp", "Rect": "235,7,40,48", "Center": "8,24" }
 }
