@@ -451,110 +451,6 @@ function void checkForBalancing()
 }
 
 
-//# address-hook(0x04b0de) end(0x04b10c)
-function void fn04b0de()
-{
-	u8[A1 + 0x20] = 0
-	D0 = u8(u8[A3 + 0x37] + 4) >> 4
-	u8[A1 + 0x22] = 0xE6
-	D0.u8 = u8[0x04b120 + D0.s16]
-
-	u8[A1 + 0x04] = (u8[A1 + 0x04] & 0xfc) | D0.u8
-	u8[A1 + 0x2a] = (u8[A1 + 0x2a] & 0xfc) | D0.u8
-
-	fn04b08e()
-}
-
-//# address-hook(0x0453e6) end(0x045526)
-function void fn0453e6()
-{
-	if (u8[A2] == 0)
-	{
-		if (u8[A2 + 0x02] != 0)
-		{
-			--u8[A2 + 0x02]
-			if (u8[A2 + 0x02] != 0)
-				return
-			objA0.sprite_priority = 0x0180
-		}
-
-		D0.u16 = objA1.position.x.u16 - objA0.position.x.u16 + 0x28
-		if (D0.u16 >= 0x50)
-			return
-
-		D0.u16 = objA1.position.y.u16 - objA0.position.y.u16
-		if (D0.u16 >= 0x18)
-			return
-
-		if (u8[A1 + 0x2e] != 0 || u8[A1 + 0x05] >= 0x04 || debug_mode.state != 0)
-			return
-
-		playSound(0x4a)
-		u8[A2] = 0xff
-
-		objA1.position.y.u16 = objA0.position.y.u16 + D1.u16
-		objA1.velocity.x = 0
-		u16[A1 + 0x1c] = 0
-		u8[A1 + 0x3d] = 0
-		u8[A1 + 0x2e] = 0x03
-		u8[A1 + 0x04] &= 0xfc
-		u8[A1 + 0x20] = 0
-
-		D0.u16 = 0xE6
-		u8[A1 + 0x22] = D0.u8
-		SetCharacterSpritePatterns()
-	}
-	else
-	{
-		objA1.position.y.u16 = objA0.position.y.u16 + D1.u16
-		if (u8[A1 + 0x05] >= 0x04)
-		{
-			u8[A1 + 0x2e] = 0
-			u8[A2] = 0
-			u8[A2 + 0x02] = 0x3c
-		}
-		else
-		{
-			D1.u16 = D0.u16 & 0xff70
-			if (D1.u8 != 0)
-			{
-				u8[A1 + 0x2e] = 0
-				u8[A2] = 0
-				u8[A2 + 0x02] = 0x1e
-				objA0.sprite_priority = 0x80
-
-				D1.u16 = -0x200
-				D2.u16 = -0x400
-				if ((D0 & 0x0400) == 0)
-				{
-					objA0.sprite_priority = 0x0180
-					D1.s16 = -D1.s16
-					if ((D0 & 0x0800) == 0)
-					{
-						D1 = 0
-						if (D0 & 0x0200)
-						{
-							D2 = 0
-						}
-					}
-				}
-
-				objA1.velocity.x = D1.u16
-				D0 = s32[A0 + 0x2e] >> 8
-				D0.u16 += D2.u16
-				objA1.velocity.y = D0.u16
-				u8[A1 + 0x1e] = 0x0e
-				u8[A1 + 0x1f] = 0x07
-				objA1.state = char.state.ROLLING
-				objA1.flags2a |= (char.flag.IN_AIR | char.flag.ROLLING)
-				u8[A1 + 0x40] = 0x01
-
-				playSound(0x62)
-			}
-		}
-	}
-}
-
 //# address-hook(0x03967c) end(0x03968c)
 function void fn03967c()
 {
@@ -804,3 +700,5 @@ function void fn05c91e()
 	UpdateKnucklesAnimation()
 
 }
+
+include protoswing
