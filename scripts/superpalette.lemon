@@ -1,0 +1,54 @@
+// edited to make sure the full palettes fit and load
+function u32 UpdatePaletteEffects.SuperForm.getSuperSonicUnderwaterPalette()
+{
+	return (global.zone == 0 || global.zone == 5) ? 0x2031C2 : 0x20323A
+}
+
+//# address-hook(0x00386e)
+function void UpdatePaletteEffects.UpdateSuperSonic.Original(u8 characterVersion)
+{
+	// Note that this is used for Tails as well, but only to update Sonic's palette (affects the Flickies!)
+	--super.palettefx.timer
+	if (super.palettefx.timer < 0)
+	{
+		UpdatePaletteEffects.SuperForm.applyGeneral(characterVersion, 0x00398e)
+
+		super.palettefx.timer = 7
+		super.palettefx.frame += 6
+		
+		if (super.palettefx.frame >= 90)		// Extend Super Sonic's palette effect
+			super.palettefx.frame = 36
+	}
+}
+
+function void UpdatePaletteEffects.UpdateSuperSonic.Smoothed(u8 characterVersion)
+{
+	// Note that this is used for Tails as well, but only to update Sonic's palette (affects the Flickies!)
+	u8 cycles = (Game.getSetting(SETTING_GFX_ANTIFLICKER) == 2) ? 0x18 : 0x0c
+	u16 nextFrame = (super.palettefx.frame < 84) ? (super.palettefx.frame + 6) : 36
+	u32 address1 = 0x00398e + super.palettefx.frame
+	u32 address2 = 0x00398e + nextFrame
+	u16 blendFactor = super.palettefx.timer * 0x100 / cycles
+	if (characterVersion == 0xff)
+		UpdatePaletteEffects.SuperForm.blendFlicky(address2, address1, blendFactor, false)
+	else
+		UpdatePaletteEffects.SuperForm.blendSonicKnux(address2, address1, blendFactor, false)
+
+	if (level.water_present)
+	{
+		u32 source = UpdatePaletteEffects.SuperForm.getSuperSonicUnderwaterPalette()
+		address1 = source + super.palettefx.frame
+		address2 = source + nextFrame
+		if (characterVersion == 0xff)
+			UpdatePaletteEffects.SuperForm.blendFlicky(address2, address1, blendFactor, true)
+		else
+			UpdatePaletteEffects.SuperForm.blendSonicKnux(address2, address1, blendFactor, true)
+	}
+
+	--super.palettefx.timer
+	if (super.palettefx.timer < 0)
+	{
+		super.palettefx.timer = cycles - 1
+		super.palettefx.frame = nextFrame
+	}
+}

@@ -709,3 +709,4 @@ function void fn05c91e()
 }
 
 include protoswing
+include superpalette

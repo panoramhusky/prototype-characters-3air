@@ -88,5 +88,20 @@
 	{
 		"File": "Water Knuckles Patch.bin",
 		"RomInject": "0x7A4A"
+	},
+"super sonic":
+	{
+		"File": "Super Sonic transformation.bin",
+		"RomInject": "0x398e"
+	},
+"super sonic underwater AIZ":
+	{
+		"File": "Super Sonic transformation AIZ.bin",
+		"RomInject": "0x2031C2"
+	},
+"super sonic underwater HCZ":
+	{
+		"File": "Super Sonic transformation HCZ.bin",
+		"RomInject": "0x20323A"
 	}
 }
