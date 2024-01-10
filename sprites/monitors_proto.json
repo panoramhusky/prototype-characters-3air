@@ -1,0 +1,5 @@
+{
+	"monitor_icon_proto_sonic":           { "File": "monitors_proto.bmp", "Rect":"64,32,16,16", "Center": "8,8" },
+	"monitor_icon_proto_tails":           { "File": "monitors_proto.bmp", "Rect":"80,32,16,16", "Center": "8,8" },
+	"monitor_icon_proto_knuckles":        { "File": "monitors_proto.bmp", "Rect":"96,32,16,16", "Center": "8,8" }
+}
