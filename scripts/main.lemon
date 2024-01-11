@@ -1,3 +1,6 @@
+include protoswing
+include superpalette
+
 global bool protochars.use_protoicons
 
 function string getCharacterLivesIcon(u8 character)
@@ -457,16 +460,6 @@ function void checkForBalancing()
 	}
 }
 
-
-//# address-hook(0x03967c) end(0x03968c)
-function void fn03967c()
-{
-	D4.u16 = 0x6400
-	D6 = 0x347850
-	A2 = 0x348128
-	fn03969e()
-}
-
 //# address-hook(0x0396e4) end(0x03977a)
 function void fn0396e4()
 {
@@ -707,6 +700,3 @@ function void fn05c91e()
 	UpdateKnucklesAnimation()
 
 }
-
-include protoswing
-include superpalette
