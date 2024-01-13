@@ -1,0 +1,5 @@
+{
+	// Character icon for lives
+	"hud_lives_icon_pink_knuckles": { "File": "hud_life_sprites_pink.png", "Rect": "0,48,48,16" }
+
+}

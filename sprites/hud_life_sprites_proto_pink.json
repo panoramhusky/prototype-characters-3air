@@ -1,0 +1,6 @@
+{
+	"hud_lives_icon_proto_pink_sonic":    { "File": "hud_life_sprites_proto.png", "Rect": "0,16,48,16" },
+	"hud_lives_icon_proto_pink_tails":    { "File": "hud_life_sprites_proto.png", "Rect": "0,32,48,16" },
+	"hud_lives_icon_proto_pink_knuckles": { "File": "hud_life_sprites_proto_pink.png", "Rect": "0,48,48,16" },
+	"hud_lives_icon_proto_pink_miles":    { "File": "hud_life_sprites_proto.png", "Rect": "0,64,48,16" }
+}
