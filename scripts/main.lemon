@@ -2,6 +2,7 @@ include protoswing
 include superpalette
 
 global bool protochars.use_protoicons
+global bool protochars.protoknuxpalette
 
 function string getCharacterLivesIcon(u8 character)
 {
@@ -9,6 +10,21 @@ function string getCharacterLivesIcon(u8 character)
 		return (character == CHARACTER_SONIC) ? "hud_lives_icon_proto_sonic" : (character == CHARACTER_TAILS) ? ((global.region_code & 0x80) ? "hud_lives_icon_proto_tails" : "hud_lives_icon_proto_miles") : "hud_lives_icon_proto_knuckles"
 	else
 		return base.getCharacterLivesIcon(character)
+}
+
+function u64 Monitor.getIconSpriteKey(u8 type)
+{
+	if (type == 0x01 && protochars.use_protoicons)
+	{
+		return isMainCharacter(CHARACTER_SONIC) ? "monitor_icon_proto_sonic" : isMainCharacter(CHARACTER_TAILS) ? "monitor_icon_proto_tails" : "monitor_icon_proto_knuckles"
+	}
+
+	return base.Monitor.getIconSpriteKey(type)
+}
+
+function string getCharacterPaletteKey(u8 character)
+{
+	return (character == CHARACTER_KNUCKLES && protochars.protoknuxpalette) ? "character_palette_knuckles_pink" : base.getCharacterPaletteKey(character)
 }
 
 //# address-hook(0x0221ec) end(0x022246)

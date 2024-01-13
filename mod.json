@@ -25,5 +25,31 @@
 				}
 			}
 		],
+		
+		"1-Visuals2":
+		[
+			{
+				"InternalName": "protochars.protoknuxpalette",
+				"DisplayName": "Knuckles Palette",
+				"Variable": "protochars.protoknuxpalette",
+				"Category": "Visuals",
+				"DefaultValue": "0",
+				"Options":
+				{
+						"0x00": "Final",
+						"0x01": "Prototype",						
+				}
+			}
+		],
+	},
+	
+	"OtherMods":
+	{
+		"extra-character-slots-unlimited":
+		{
+			"DisplayName": "Extra Character Slots",
+			"IsRequired": "0",
+			"Priority": "Higher"
+		},
 	},
 }
