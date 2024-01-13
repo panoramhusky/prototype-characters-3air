@@ -1,0 +1,13 @@
+{
+	"snowboard_0x01":  { "File": "snowboard.bmp", "Rect": "0,1,63,16", "Center": "31,14" },
+	"snowboard_0x02":  { "File": "snowboard.bmp", "Rect": "64,1,48,48", "Center": "22,26" },
+	"snowboard_0x03":  { "File": "snowboard.bmp", "Rect": "113,0,16,64", "Center": "2,32" },
+	"snowboard_0x04":  { "File": "snowboard.bmp", "Rect": "130,1,48,48", "Center": "22,22" },
+	"snowboard_0x05":  { "File": "snowboard.bmp", "Rect": "179,1,64,16", "Center": "32,2" },
+	"snowboard_0x06":  { "File": "snowboard.bmp", "Rect": "244,1,48,48", "Center": "26,22" },
+	"snowboard_0x07":  { "File": "snowboard.bmp", "Rect": "293,1,16,63", "Center": "14,31" },
+	"snowboard_0x08":  { "File": "snowboard.bmp", "Rect": "310,1,48,48", "Center": "26,26" },
+	"snowboard_0x09":  { "File": "snowboard.bmp", "Rect": "359,1,64,16", "Center": "32,14" },
+	"snowboard_0x0a":  { "File": "snowboard.bmp", "Rect": "424,1,48,48", "Center": "22,26" },
+	"snowboard_0x0b":  { "File": "snowboard.bmp", "Rect": "473,1,32,56", "Center": "14,28" }
+}
