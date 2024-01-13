@@ -36,8 +36,8 @@
 				"DefaultValue": "0",
 				"Options":
 				{
-						"0x00": "Final",
-						"0x01": "Prototype",						
+						"0x00": "Red",
+						"0x01": "Pink",	//I changed this because we don't actually know if red or pink was intended, as 1103 has red Knuckles -ph
 				}
 			}
 		],
