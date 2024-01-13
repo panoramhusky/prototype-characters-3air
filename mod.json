@@ -37,7 +37,7 @@
 				"Options":
 				{
 						"0x00": "Red",
-						"0x01": "Pink",	//I changed this because we don't actually know if red or pink was intended, as 1103 has red Knuckles -ph
+						"0x01": "Pink",	//I changed this because we don't actually know if red or pink was intended, as 1103 has red Knuckles -ph // okay -hs
 				}
 			}
 		],
