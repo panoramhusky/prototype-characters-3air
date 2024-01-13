@@ -20,8 +20,8 @@
 				"DefaultValue": "0",
 				"Options":
 				{
-						"0x00": "Final",
-						"0x01": "Prototype",						
+						"0x00": "1103/Final",
+						"0x01": "Proto Style",						
 				}
 			}
 		],
