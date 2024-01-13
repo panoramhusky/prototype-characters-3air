@@ -6,10 +6,25 @@ global bool protochars.protoknuxpalette
 
 function string getCharacterLivesIcon(u8 character)
 {
+	u64 key
 	if (protochars.use_protoicons)
-		return (character == CHARACTER_SONIC) ? "hud_lives_icon_proto_sonic" : (character == CHARACTER_TAILS) ? ((global.region_code & 0x80) ? "hud_lives_icon_proto_tails" : "hud_lives_icon_proto_miles") : "hud_lives_icon_proto_knuckles"
-	else
-		return base.getCharacterLivesIcon(character)
+	{
+		key = (character == CHARACTER_SONIC) ? "hud_lives_icon_proto_sonic" : (character == CHARACTER_TAILS) ? ((global.region_code & 0x80) ? "hud_lives_icon_proto_tails" : "hud_lives_icon_proto_miles") : "hud_lives_icon_proto_knuckles"
+		
+		if (isMainCharacter(CHARACTER_KNUCKLES) && protochars.protoknuxpalette)
+		{
+			key = "hud_lives_icon_proto_pink_knuckles"
+		}
+		
+		return key
+	}
+	else if (isMainCharacter(CHARACTER_KNUCKLES) && protochars.protoknuxpalette)
+	{
+		return "hud_lives_icon_pink_knuckles"
+	}
+	
+	
+	return base.getCharacterLivesIcon(character)
 }
 
 function u64 Monitor.getIconSpriteKey(u8 type)
