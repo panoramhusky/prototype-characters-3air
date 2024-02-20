@@ -1,5 +1,5 @@
 {
 	"charselect_sonic":  { "File": "charselect_sonic.bmp", "Rect": "0,0,27,40", "Center": "18,20" },
 	"charselect_tails":  { "File": "charselect_tails.bmp", "Rect": "0,0,40,40", "Center": "20,24" },
-	"charselect_knuckles":  { "File": "charselect_knuckles.bmp", "Rect": "0,0,32,41", "Center": "13,20" }
+	"charselect_knuckles":  { "File": "charselect_knuckles.bmp", "Rect": "0,0,32,42", "Center": "13,21" }
 }
